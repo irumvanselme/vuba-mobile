@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, TouchableHighlight } from "react-native";
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
@@ -12,15 +12,16 @@ const styles = StyleSheet.create({
     text: {
         textAlign: "center",
         color: "white",
-        fontSize: 18,
-        fontWeight: "600",
+        fontSize: 17,
+        fontWeight: "700",
+        textTransform: "uppercase"
     }
 })
 
 export default ({ children }) => {
     return (
-        <TouchableHighlight style={styles.container}>
+        <TouchableOpacity style={styles.container}>
             <Text style={styles.text}>{children}</Text>
-        </TouchableHighlight>
+        </TouchableOpacity>
     );
 };

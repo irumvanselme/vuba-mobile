@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 
-import FormControl from "../components/FormControl";
-import Button from "../components/Button";
+import FormControl from "../../components/FormControl";
+import Button from "../../components/Button";
 
 const styles = StyleSheet.create({
 	container: {
@@ -36,7 +36,7 @@ export default function LoginScreen() {
 				<Text style={{ textAlign: "right", fontStyle: "italic" }}>
 					Forgot password ?
 				</Text>
-				<Button>Click me</Button>
+				<Button>log in</Button>
 				<Text style={styles.actionButton}>Create an account</Text>
 			</View>
 		</View>
