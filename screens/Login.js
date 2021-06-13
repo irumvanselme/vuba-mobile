@@ -14,6 +14,11 @@ const styles = StyleSheet.create({
 		fontSize: 30,
 		fontWeight: "700",
 	},
+	actionButton: {
+		color: "dodgerblue",
+		textAlign: "center",
+		marginTop: 40
+	}
 });
 
 export default function LoginScreen() {
@@ -32,6 +37,7 @@ export default function LoginScreen() {
 					Forgot password ?
 				</Text>
 				<Button>Click me</Button>
+				<Text style={styles.actionButton}>Create an account</Text>
 			</View>
 		</View>
 	);
